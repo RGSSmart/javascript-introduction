@@ -12,6 +12,9 @@ function saberi(a, b) {
 var promenljiva = function () {
     return "Ovo je rezultat iz funckije";
 };
+// Spoj definicije i poziva funcije u jedno redu
+( function x() { console.log(" this is imidate invoking system"); })()
+
 
 
 var objekat = {
