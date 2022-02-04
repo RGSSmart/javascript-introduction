@@ -8,5 +8,5 @@ Da bi se kvalitetno naucili gradivo neophodno je V E Z B A T I  i samo vezbati, 
 Sve isecke kodova mozete proveriti u chrome konzoli ( klikom na F12 ) ili na nekoliko online platforma koji run-uju javascript kod.
 
 Na vasem repozitorijumu treba da stoje resenja practice.js fajlova grupisanih po casovima bas kao i ovde, kako bih mogla da ih pregledam i analiziram.
-:)
+
 
