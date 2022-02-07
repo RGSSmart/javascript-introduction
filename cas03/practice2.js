@@ -28,3 +28,24 @@ a = druga
 // Poziv metode ciji je parametar druga metoda
 druga(prva);
 //NaN <- Ovo je povratna vrednost!
+
+//Zadatak 2 :  Sta ce biti ispisano?
+function f(){
+    return "f" + 4;
+}
+f();
+
+(function x(){
+    console.log("X");
+})();
+
+var a = f;
+var rez = a();
+console.log(rez());
+
+var objekat = {
+    a : function( ){ return "a"; },
+    b : function(b){ return b;   },
+    c : function(c){ return c*c; }
+}
+
