@@ -38,7 +38,7 @@ f();
 (function x(){
     console.log("X");
 })();
-
+ // Ovde sam stala sa II3
 var a = f;
 var rez = a();
 console.log(rez());
