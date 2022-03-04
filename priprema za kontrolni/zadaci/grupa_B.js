@@ -1,18 +1,20 @@
 // ------------------------------   PRIMERI ZADATAKA ZA KONTROLNI -------------------------------------------
-// 1. Napisati anonimnu funciju koja pravi niz objekata na osnovu parametara.
+// 1. Napisati anonimnu funciju koja pravi niz strignova na osnovu parametara.
 // Primer:
-var users = [{
-    name: "blah",
-    email: "blah@gmail.com"
+var data = [{
+    string:"A",
+    n: 3,
 },
 {
-    name: "blah1"
+    string:"B",
+    n: 2,
 },
 {
-    email: "undefined@gmail.com"
+    string:"C",
+    n: 1
 }]
 
-// Ocekivani izgled niza je: [ "blah" , "blah@gmail.com" , "blah1" , "undefiend@gmail.com"];
+// Ocekivani izgled niza je: [ "A","A","A", "B","B","C"];
 
 // 2. Napisati skrkptu koja uporedjuje datume 
 
