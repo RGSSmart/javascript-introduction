@@ -1,6 +1,7 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
+app.disableHardwareAcceleration(); // to tako treba
 
 function createWindow () {
   // Create the browser window.
