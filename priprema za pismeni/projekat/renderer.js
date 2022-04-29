@@ -1,3 +1,4 @@
+import { getNodeCount } from "../statiske";
 var data = {
   "nodes": [
     {
@@ -22,6 +23,8 @@ var data = {
 }
 var chart;// = anychart.graph(data);
 
+// Funckija iz drugog fajla
+getNodeCount(data);
 
 function renderGraph() {
 
