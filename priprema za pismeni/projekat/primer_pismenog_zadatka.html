@@ -1,0 +1,65 @@
+// Primer pismenog zadatka iz narednih tehnika 
+
+// 1. U prilozeni projekat dodati fajlove stranica.html I scripta.js . (5 poena) 
+// 2. Napraviti rutu ( link ) na index.html strnici ka novokreiranoj stranici (5poena) 
+<a href="/stranica.html"> link </a>
+// 3. U stranica.html dodati sledece elemente: 
+// a) naslov sa tekstom: Druga stranica  (5poena) 
+<h1> Druga stranica </h1>
+// b) polje za unos bez teksta I id-em unos (5poena) 
+<input id="unos">
+// c) dugme sa tekstom ok  I id-em dugme (5poena) 
+<button id="dugme"> Dugme</button>
+// d) linkovati script.js kao modul (5poena) 
+<script src="script.js" type="module"></script>
+// 4. Napisati javascript funkciju unutar script.js fajla  pod nazivom PROVERA_UNOS() koji dodaje eventlistener na dugme sa id-em dugme. Eventlistener uzima vrednost unosa I proverava da li je unet broj. Ako je unet broj umesto naslova se ispisuje poruka unet je broj, a ako niej broj umesto naslova je ispisuje nije unet broj. (15 poena) 
+   <script>export function PROVERA_UNOS() {
+        if (document.getElementById("dugme") != null) { // 7. zadatak
+            document.getElementById("dugme").addEventListener('click', () => {
+                if (isNaN(document.getElementById("unos").value)) {
+                    document.getElementById("naslov").innerHTML = "Nije broj";
+                } else {
+                    document.getElementById("naslov").innerHTML = "Jeste broj";
+                }
+            });
+        }
+    }
+    PROVERA_UNOS();
+    </script> 
+// 5. Napisati javascript funkciju unutar script.js pod nazivom DRUGA() koja se poziva momentalno I ispisuje u konzoli da li postoji element sa ID-em dugme na strnica.html. ( 10 poena ) 
+    <script>
+        (function DRUGA() {
+        if (document.getElementById("dugme") == null)
+            console.log("Element ne postoji");
+        else
+            console.log("Element postoji");
+    })()
+    </script>
+// 6. Napraviti da se provera_unosa() funckija pozivaju u renderer.js fajlu. ( 5 poena ) 
+// 7. Dodati u PROVERA_UNOSA() takvu proveru da funckija ne baca gresku. ( 10 poena ) 
+// 8. Napisati javascript funckiju unutar script.js koja uzima tekst iz input polja I dodaje novi cvor u varijablu DATA sa imenom unetog teksta. Pre dodavanja cvora u niz, neophodno je proveriti da li postoji cvor sa takvim imenom I onemoguciti dodavanje ako postoji. 
+<script>
+            export function DODAVAJE_CVOROVA( data ){
+        var text = document.getElementById("unos").value;
+        
+        for( let node of data.nodes){
+            console.log(node.id)
+            if( node.id == text){
+            }
+        }
+        data.nodes.push({ "id": text });
+    }
+</script>
+// 8a. Prilikom dodavanja novog cvora promeniti stil cvora tako da bude ZUTE BOJE.  
+// 8b. Dodati jos jedan html tag u body-ju gde ce se prilikom dodavanja ( a kasnije I brisanja ) prikazivati broj trenutnih cvorova u grafu 
+// 9. Implementirati brisanje cvorova iz grafa poi menu iz padajuceg menija ( comboBox stil, a <options> tag u HTML-u ) 
+
+ 
+
+// Primeri zadataka za 5 
+// ( Bonus poeni ko ih odradi kuci za vezbu J ) 
+// 1.Napisati javascript funckiju koja proverava da li se od jednog cvora A moze doci do drugog cvora B bilo kojom putanjom. Cvor A I cvor B su string-ovi koji se unose sa input polja .html stranice. Takodje, fuckija pre trazenja rute proverava da li su unos validan tj. Da li su uneti cvorovi zapravo u grafu, ako nisu prekida se I baca poruku korisniku.  
+// 2. Napisati javascript funckiju koja provera tranzientnosti u grafu. Tranzietnost u grafu postoji ako postoje veze tipa A->B,B->C I C->A. 
+// 3. Napisati javascript funckiju koja ispistuje da li je graf orijentisan. Graf je orijentisan ako za svaku vezu tupa A-.B postoji veza B->A 
+
+ 
